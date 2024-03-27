@@ -85,6 +85,10 @@ export async function getStaticProps(
     }
   }
 
+  console.log("Resource type:", type); // Log the resource type
+  console.log("Node:", node); // Log the node
+
+
   // Load initial view data.
   if (type === "node--landing_page") {
     for (const section of node.field_sections) {
